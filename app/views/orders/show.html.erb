@@ -1,0 +1,46 @@
+
+<div class = 'text-right show' > 
+</div> 
+
+
+<div class = "card css-class-name" > 
+	<div class = "card-body"> 
+
+
+<h1>Bill</h1>
+ <th scope ="row"> Order No. <%= @order.id %> </th>
+
+ <table class= " table table-bordered"> 
+ 	<thead> 
+ 		<tr> 
+ 			<th scope = "col">Ordered Item</th>
+ 			<th scope = "col"> Quantity </th> 
+ 		</tr> 
+ 	</thead> 
+ 	<tr> 
+ 		<td> <%= @order.food %> </td> 
+ 		<td> <%= @order.food_quantity%>
+ </td>
+
+ <tr> 
+ </tr>
+ <td> <%= @order.beverage %> </td>
+ <td> <%= @order.beverage_quantity %> </td>
+  </tr> 
+  <tr> 
+  <td>Total</td>
+  	<td> 
+  		<%= @order.total_price %> 
+  	</td> 
+  </tr> 
+</tbody> 
+</table> 
+<div class= "form-group"> 
+	<%= link_to 'Back to the Ordered item', orders_path, class: "btn btn-secondary" %> 
+</div>
+</div> 
+</div> 
+
+
+ 
+
